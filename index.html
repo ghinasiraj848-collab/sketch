@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luna Beauty</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8fa;
+            color: #2b2024;
+        }
+
+        header {
+            padding: 20px;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px #00000010;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2b2024;
+            margin-left: 12px;
+            font-size: 14px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: #f8e5eb;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 25px;
+            background: #2b2024;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        .products {
+            padding: 50px 20px;
+        }
+
+        .products h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px #00000012;
+        }
+
+        .product img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin: 15px 0 8px;
+        }
+
+        .price {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 60px 20px;
+            background: #2b2024;
+            color: white;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 25px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #181216;
+            color: white;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        LUNA BEAUTY
+    </div>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#products">المنتجات</a>
+        <a href="#contact">تواصل</a>
+    </nav>
+
+</header>
+
+
+<section class="hero" id="home">
+
+    <h1>
+        جمالك يبدأ هنا
+    </h1>
+
+    <p>
+        منتجات مختارة بعناية<br>
+        لتكملي روتينك اليومي بطريقة جميلة.
+    </p>
+
+    <a href="#products" class="button">
+        اكتشفي المنتجات
+    </a>
+
+</section>
+
+
+<section class="products" id="products">
+
+    <h2>
+        منتجاتنا
+    </h2>
+
+
+    <div class="product-container">
+
+
+        <div class="product">
+
+            <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=600&q=80">
+
+            <h3>
+                كريم مرطب
+            </h3>
+
+            <p class="price">
+                129 DH
+            </p>
+
+            <a href="#contact" class="button">
+                أطلبي الآن
+            </a>
+
+        </div>
+
+
+        <div class="product">
+
+            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=600&q=80">
+
+            <h3>
+                سيروم للوجه
+            </h3>
+
+            <p class="price">
+                159 DH
+            </p>
+
+            <a href="#contact" class="button">
+                أطلبي الآن
+            </a>
+
+        </div>
+
+
+        <div class="product">
+
+            <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=600&q=80">
+
+            <h3>
+                مجموعة العناية
+            </h3>
+
+            <p class="price">
+                249 DH
+            </p>
+
+            <a href="#contact" class="button">
+                أطلبي الآن
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h2>
+        عندك شي سؤال؟
+    </h2>
+
+    <p>
+        تواصلي معنا مباشرة عبر WhatsApp
+    </p>
+
+    <a
+        class="whatsapp"
+        href="https://wa.me/212600000000"
+        target="_blank">
+
+        WhatsApp
+
+    </a>
+
+</section>
+
+
+<footer>
+
+    © 2026 Luna Beauty
+
+</footer>
+
+
+</body>
+</html>
